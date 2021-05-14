@@ -1,5 +1,4 @@
 /* {font-size:13pt;font-weight:normal;} */
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
@@ -155,12 +154,12 @@ code > span.fl {
 	padding-top: 5px;
 }
 
-/* VISUALIZATIONS */
-#bar-chart-race, #introduction, #donut-2020, #donut-2014, #interactive-fiction {
+/* TOGGLE INDICATOR */
+#bar-chart-race, #introduction, #donut-2020, #donut-2014, #interactive-fiction, #analog-object, #visual-object, #interactive-object {
 	cursor:pointer;
 }
 
-#bar-chart-race-body, #introduction-body, #donut-2014-body, #donut-2020-body, #interactive-fiction-body {
+#bar-chart-race-body, #introduction-body, #donut-2014-body, #donut-2020-body, #interactive-fiction-body, #analog-object-body, #visual-object-body, #interactive-object-body {
 	padding: 1.5em;
 	margin: 1.5em;
 	background-color: #eee;
