@@ -1,0 +1,202 @@
+/* {font-size:13pt;font-weight:normal;} */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@media (min-width: 64em) {
+	.row {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row-reverse;
+	}
+	.col { flex-grow: 1; }
+}
+
+.grid {
+	border-collapse: collapse;
+}
+
+/*.col {
+	border: 6px double #850E08;
+  border-radius: 0.25em;
+	padding: 1em;
+  -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}*/
+
+.user-list {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	list-style-type: none;
+	padding: 0;
+}
+.user-list li {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	flex: 10em;
+}
+.user-list::after {
+	content: "";
+}
+
+body {
+	margin: auto;
+	padding: 1em;
+	max-width: 64em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+	color: #030001;
+	background: #FFF;
+	word-wrap: break-word;
+}
+a {
+	text-decoration: none;
+	color: #397562;
+	font-weight: italic;
+	padding-right: 0.25em;
+}
+a:hover { color: #030001; }
+
+hr {
+  border: 0;
+  border-top: 2px dotted #030001;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.text-center {
+	text-align: center;
+}
+.advisory {
+	background: #fc4;
+	color: #222;
+	font-weight: bold;
+	padding: 1em;
+	border-radius: 0.25em;
+}
+
+h2 {
+	color: #030001;
+	font-family: "Montserrat", monospace;
+    font-weight: 300;
+}
+
+
+
+/* THEGOODS */
+#fancyboi::before {
+	content: "> ";
+}
+@media (prefers-reduced-motion: no-preference) {
+	@keyframes flash {
+		50% { opacity: 0; }
+	}
+	@keyframes reveal {
+		from { width: 2em; } /* Width of ::before */
+		  to { width: 100%; }
+	}
+	#fancyboi {
+        display: block;
+        margin-top: 0em;
+        margin-bottom: 0.15em;
+		overflow: hidden;
+		white-space: pre;
+		animation: reveal 4s linear;
+        font-family: 'Major Mono Display', monospace;
+		text-overflow: "\2593";
+	}
+	#fancyboi::after {
+		content: "\2593";
+		animation: flash 0.75s step-end infinite;
+	}
+}
+
+/* THEGOODS */
+
+
+/* SDOOGEHT */
+
+.sourceCode {
+ color:#008000;
+}
+
+code > span.fl { 
+ color: #008000; 
+}
+
+ /* Style the navbar */
+/*#navbar:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(127, 127, 127, 0.5);
+	background-image: radial-gradient(black 33%, transparent 33%);
+	background-size: 2px 2px;
+}*/
+#navbar {
+	overflow: hidden;
+    background-image: radial-gradient(#000 15%, transparent 80%);
+    background-size: 2px 2px;
+	background-color: #1b9e77;
+	color: #222;
+	z-index: 99;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-radius: 0.25em;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+
+
+#navbar a:hover {
+	background-color: #030001;
+}
+
+/* Navbar links */
+#navbar a {
+	float: left;
+	display: block;
+	color: #F5E9DA;
+	text-align: center;
+    font-family: "Montserrat", monospace;
+    font-weight: 500;
+    font-style: italic;
+	padding: 14px;
+	text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Page content */
+.content {
+	padding-top: 5px;
+}
+
+/* VISUALIZATIONS */
+#bar-chart-race, #introduction, #donut-2020, #donut-2014 {
+	cursor:pointer;
+}
+
+#bar-chart-race-body, #introduction-body, #donut-2014-body, #donut-2020-body {
+	padding: 1.5em;
+	margin: 1.5em;
+	background-color: #eee;
+	border-radius: 0.25em;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+	td {
+		display: block;
+	}
+}

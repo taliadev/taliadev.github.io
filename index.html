@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta name="author" content="taliadev" />
+    <title>taliadev - poetry</title>
+    <link href="taliadev/base.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <h1 id="fancyboi" class="title">student loan debt <br> (as modern triptych)</h1>
+        </header>
+        <br>
+        <div id="navbar">
+            <a href="index.html">about</a>
+            <a href="taliadev/visual.html">visual</a>
+            <a href="taliadev/interactive.html">interactive</a>
+            <a href="taliadev/analog.html">analog</a>
+            <a href="taliadev/revisions.html">revisions</a>
+        </div>
+        <br>
+        <div class="grid">
+            <div class="row">
+
+                <div class="col">
+
+                    <h2>table of contents</h2>
+                    <nav id="TOC">
+                        <ul>
+                            <li><a href="#introduction"><em>introduction</em></a></li>
+                            <li><a href="#bar-chart-race"><em>bar chart race of federal outstanding debt: 2014–2020
+                                    </em></a></li>
+                            <li><a href="#donut-2014"><em>donut chart breakdown of federal oustanding debt: 2014</em></a>
+                            </li>
+                            <li><a href="#donut-2020"><em>donut chart breakdown of federal oustanding debt: 2020</em></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <hr>
+                    <!-- unindent body so that code blocks don't have extra indents. See
+     https://stackoverflow.com/questions/42773587/code-block-formatting-issues-with-bootstrap-and-pandoc -->
+                    <!-- <div><iframe width="100%" height="441" frameborder="0"
+                        src="https://observablehq.com/embed/72bac08c1e19a1c1?cells=chart"></iframe></div> -->
+
+                    <h2 id="introduction"><a href="#introduction">▒ </a><em>introduction</em></h2>
+                    <div>
+
+                    </div>
+                    <div id="introduction-body">
+                        <div>
+                            <p>
+                                for many americans transitioning into adulthood, college was the golden ticket to a
+                                well-paying job, and student loans were
+                                merely the cost of admission. today, <a
+                                    href="https://www.federalreserve.gov/publications/2019-economic-well-being-of-us-households-in-2018-student-loans-and-other-education-debt.htm">over
+                                    half</a>of all american students have to go into
+                                some
+                                form of debt, including loans, to fund their education.
+                                the average debt burden, as of 2020? <a href="https://educationdata.org/student-loan-debt-statistics">$39,351</a>. but what does that cost look like on a
+                                national scale? and what would be different, if the government just funded postsecondary education directly?
+                            </p>
+                            <p>
+                                the visualizations below focus on the growth and composition of outstanding federal debt
+                                from 2014 to 2020.
+                            </p>
+                        </div>
+                    </div>
+                    <h2 id="bar-chart-race"><a href="#bar-chart-race">▒ </a><em>bar chart race of federal outstanding
+                            debt: 2014-2020</em></h2>
+                    <div>
+                        <p>
+                            the cost of college keeps going up, and so do outstanding loans. but <em>how</em> fast, and
+                            what kinds?</p>
+                        <p>this first chart animates the amount (in $B) of outstanding federal student loan debt
+                            (principal and interest) from q2 2014–q4 2020 for consolidated, stafford unsubsidized,
+                            stafford subsidized, parent plus, grad plus, and perkins loans. see <a href="https://observablehq.com/d/e9e3929cf7c50b45">the explainer</a>for the
+                            base, annotated source code, and <a href="https://studentaid.gov/"">studentaid.gov</a>for the <a href="https://studentaid.gov/data-center/student/portfolio">source data</a>and a <a href="https://studentaid.gov/understand-aid/types/loans">breakdown of loan types</a>.
+                            the code can be viewed and modified through the embedded observable link below.
+                        </p>
+                        <p>(note: the amount of outstanding perkins debt was the only category that decreased between 2014–2020, after the federal government stopped offering new perkins loans in 2018.)</p>
+                    </div>
+                    <div id="bar-chart-race-body">
+                        <iframe width="100%" height="492" frameborder="0"
+                            src="https://observablehq.com/embed/72bac08c1e19a1c1?cells=viewof+replay%2Cchart"></iframe>
+                    </div>
+                    <h2 id="donut-2014"><a href="#donut-2014">▒ </a><em>donut chart breakdown of federal oustanding debt: 2014</em>
+                    </h2>
+                    <div>
+                        <p>
+                            the following pie graphs provide a more immediate sense of scale comparing the total change in outstanding debt from 2014–2020. the code for these graphs is drawn from <a href="https://www.d3-graph-gallery.com/graph/donut_label.html">the d3 graph gallery</a>.
+                        </p>
+                    </div>
+                    <div id="donut-2014-body">
+                        <iframe width="100%" height="584" frameborder="0"
+                            src="https://observablehq.com/embed/ec0e267430823a8c?cells=donut2014"></iframe>
+                    </div>
+                    <h2 id="donut-2020"><a href="#donut-2020">▒ </a><em>donut chart breakdown of federal oustanding debt: 2020</em>
+                    </h2>
+                    <div>
+                        <p>
+                            the area of these donut charts is scaled proportionally, to visually illustrate the 44% increase in total debt over the course of six years.
+                            however, the composition of the outstanding debt did not change significantly.
+                        </p>
+                    </div>
+                    <div id="donut-2020-body">
+                        <iframe width="100%" height="584" frameborder="0"
+  src="https://observablehq.com/embed/4ff13be01e9615ba?cells=chart"></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div></div>
+</body>
+<script>let slideUp = (target, duration = 500) => {
+        target.style.transitionProperty = 'height, margin, padding';
+        target.style.transitionDuration = duration + 'ms';
+        target.style.boxSizing = 'border-box';
+        target.style.height = target.offsetHeight + 'px';
+        target.offsetHeight;
+        target.style.overflow = 'hidden';
+        target.style.height = 0;
+        target.style.paddingTop = 0;
+        target.style.paddingBottom = 0;
+        target.style.marginTop = 0;
+        target.style.marginBottom = 0;
+        window.setTimeout(() => {
+            target.style.display = 'none';
+            target.style.removeProperty('height');
+            target.style.removeProperty('padding-top');
+            target.style.removeProperty('padding-bottom');
+            target.style.removeProperty('margin-top');
+            target.style.removeProperty('margin-bottom');
+            target.style.removeProperty('overflow');
+            target.style.removeProperty('transition-duration');
+            target.style.removeProperty('transition-property');
+            //alert("!");
+        }, duration);
+    }
+
+    let slideDown = (target, duration = 500) => {
+        target.style.removeProperty('display');
+        let display = window.getComputedStyle(target).display;
+
+        if (display === 'none')
+            display = 'block';
+
+        target.style.display = display;
+        let height = target.offsetHeight;
+        target.style.overflow = 'hidden';
+        target.style.height = 0;
+        target.style.paddingTop = 0;
+        target.style.paddingBottom = 0;
+        target.style.marginTop = 0;
+        target.style.marginBottom = 0;
+        target.offsetHeight;
+        target.style.boxSizing = 'border-box';
+        target.style.transitionProperty = "height, margin, padding";
+        target.style.transitionDuration = duration + 'ms';
+        target.style.height = height + 'px';
+        target.style.removeProperty('padding-top');
+        target.style.removeProperty('padding-bottom');
+        target.style.removeProperty('margin-top');
+        target.style.removeProperty('margin-bottom');
+        window.setTimeout(() => {
+            target.style.removeProperty('height');
+            target.style.removeProperty('overflow');
+            target.style.removeProperty('transition-duration');
+            target.style.removeProperty('transition-property');
+        }, duration);
+    }
+    var slideToggle = (target, duration = 500) => {
+        if (window.getComputedStyle(target).display === 'none') {
+            return slideDown(target, duration);
+        } else {
+            return slideUp(target, duration);
+        }
+    }
+</script>
+<script>document.getElementById("introduction").addEventListener('click', function () {
+        slideToggle(document.getElementById("introduction-body"), 350);
+    });
+    document.getElementById("bar-chart-race").addEventListener('click', function () {
+        slideToggle(document.getElementById("bar-chart-race-body"), 350);
+    });
+    document.getElementById("donut-2014").addEventListener('click', function () {
+        slideToggle(document.getElementById("donut-2014-body"), 350);
+    });
+    document.getElementById("donut-2020").addEventListener('click', function () {
+        slideToggle(document.getElementById("donut-2020-body"), 350);
+    });</script>
