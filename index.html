@@ -27,93 +27,31 @@
             <div class="row">
 
                 <div class="col">
-
-                    <h2>table of contents</h2>
-                    <nav id="TOC">
-                        <ul>
-                            <li><a href="#introduction"><em>introduction</em></a></li>
-                            <li><a href="#bar-chart-race"><em>bar chart race of federal outstanding debt: 2014–2020
-                                    </em></a></li>
-                            <li><a href="#donut-2014"><em>donut chart breakdown of federal oustanding debt: 2014</em></a>
-                            </li>
-                            <li><a href="#donut-2020"><em>donut chart breakdown of federal oustanding debt: 2020</em></a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <hr>
-                    <!-- unindent body so that code blocks don't have extra indents. See
-     https://stackoverflow.com/questions/42773587/code-block-formatting-issues-with-bootstrap-and-pandoc -->
-                    <!-- <div><iframe width="100%" height="441" frameborder="0"
-                        src="https://observablehq.com/embed/72bac08c1e19a1c1?cells=chart"></iframe></div> -->
-
-                    <h2 id="introduction"><a href="#introduction">▒ </a><em>introduction</em></h2>
+                    <h2 id="introduction"><a href="#introduction">▒ </a><em>about</em></h2>
                     <div>
 
                     </div>
                     <div id="introduction-body">
                         <div>
                             <p>
-                                for many americans transitioning into adulthood, college was the golden ticket to a
-                                well-paying job, and student loans were
-                                merely the cost of admission. today, <a
-                                    href="https://www.federalreserve.gov/publications/2019-economic-well-being-of-us-households-in-2018-student-loans-and-other-education-debt.htm">over
-                                    half</a>of all american students have to go into
-                                some
-                                form of debt, including loans, to fund their education.
-                                the average debt burden, as of 2020? <a href="https://educationdata.org/student-loan-debt-statistics">$39,351</a>. but what does that cost look like on a
-                                national scale? and what would be different, if the government just funded postsecondary education directly?
-                            </p>
+                                this portfolio is focused on american student loan debt and its thorny dimensions, based
+                                around federal student loan data.</p>
                             <p>
-                                the visualizations below focus on the growth and composition of outstanding federal debt
-                                from 2014 to 2020.
+                                there are three different components: a visual component, an interactive fiction piece,
+                                and
+                                an analog art project. the visual component is a series of generated data
+                                visualizations, while the interactive fiction piece
+                                is a choice-based narrative putting the reader in the shoes of a incoming college freshman today.
+                                the analog art project takes the consequences of students taking on loans and fuses them with the trappings of college graduation.
                             </p>
+                            <p>(everything you see on this website has been hand-coded. enjoy.)</p>
                         </div>
                     </div>
-                    <h2 id="bar-chart-race"><a href="#bar-chart-race">▒ </a><em>bar chart race of federal outstanding
-                            debt: 2014-2020</em></h2>
-                    <div>
-                        <p>
-                            the cost of college keeps going up, and so do outstanding loans. but <em>how</em> fast, and
-                            what kinds?</p>
-                        <p>this first chart animates the amount (in $B) of outstanding federal student loan debt
-                            (principal and interest) from q2 2014–q4 2020 for consolidated, stafford unsubsidized,
-                            stafford subsidized, parent plus, grad plus, and perkins loans. see <a href="https://observablehq.com/d/e9e3929cf7c50b45">the explainer</a>for the
-                            base, annotated source code, and <a href="https://studentaid.gov/"">studentaid.gov</a>for the <a href="https://studentaid.gov/data-center/student/portfolio">source data</a>and a <a href="https://studentaid.gov/understand-aid/types/loans">breakdown of loan types</a>.
-                            the code can be viewed and modified through the embedded observable link below.
-                        </p>
-                        <p>(note: the amount of outstanding perkins debt was the only category that decreased between 2014–2020, after the federal government stopped offering new perkins loans in 2018.)</p>
-                    </div>
-                    <div id="bar-chart-race-body">
-                        <iframe width="100%" height="492" frameborder="0"
-                            src="https://observablehq.com/embed/72bac08c1e19a1c1?cells=viewof+replay%2Cchart"></iframe>
-                    </div>
-                    <h2 id="donut-2014"><a href="#donut-2014">▒ </a><em>donut chart breakdown of federal oustanding debt: 2014</em>
-                    </h2>
-                    <div>
-                        <p>
-                            the following pie graphs provide a more immediate sense of scale comparing the total change in outstanding debt from 2014–2020. the code for these graphs is drawn from <a href="https://www.d3-graph-gallery.com/graph/donut_label.html">the d3 graph gallery</a>.
-                        </p>
-                    </div>
-                    <div id="donut-2014-body">
-                        <iframe width="100%" height="584" frameborder="0"
-                            src="https://observablehq.com/embed/ec0e267430823a8c?cells=donut2014"></iframe>
-                    </div>
-                    <h2 id="donut-2020"><a href="#donut-2020">▒ </a><em>donut chart breakdown of federal oustanding debt: 2020</em>
-                    </h2>
-                    <div>
-                        <p>
-                            the area of these donut charts is scaled proportionally, to visually illustrate the 44% increase in total debt over the course of six years.
-                            however, the composition of the outstanding debt did not change significantly.
-                        </p>
-                    </div>
-                    <div id="donut-2020-body">
-                        <iframe width="100%" height="584" frameborder="0"
-  src="https://observablehq.com/embed/4ff13be01e9615ba?cells=chart"></iframe>
 
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div></div>
 </body>
@@ -184,13 +122,4 @@
 </script>
 <script>document.getElementById("introduction").addEventListener('click', function () {
         slideToggle(document.getElementById("introduction-body"), 350);
-    });
-    document.getElementById("bar-chart-race").addEventListener('click', function () {
-        slideToggle(document.getElementById("bar-chart-race-body"), 350);
-    });
-    document.getElementById("donut-2014").addEventListener('click', function () {
-        slideToggle(document.getElementById("donut-2014-body"), 350);
-    });
-    document.getElementById("donut-2020").addEventListener('click', function () {
-        slideToggle(document.getElementById("donut-2020-body"), 350);
     });</script>
