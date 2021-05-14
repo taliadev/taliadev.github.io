@@ -27,7 +27,7 @@
             <div class="row">
 
                 <div class="col">
-
+                    <!--
                     <h2>table of contents</h2>
                     <nav id="TOC">
                         <ul>
@@ -36,56 +36,20 @@
                                     </em></a></li>
                         </ul>
                     </nav>
-                    <hr>
+                    <hr>-->
                     <!-- unindent body so that code blocks don't have extra indents. See
      https://stackoverflow.com/questions/42773587/code-block-formatting-issues-with-bootstrap-and-pandoc -->
                     <!-- <div><iframe width="100%" height="441" frameborder="0"
                         src="https://observablehq.com/embed/72bac08c1e19a1c1?cells=chart"></iframe></div> -->
 
-                    <h2 id="introduction"><a href="#introduction">▒ </a><em>introduction</em></h2>
-                    <div>
-
-                    </div>
-                    <div id="introduction-body">
-                        <div>
-                            <p>
-                                for many americans transitioning into adulthood, college was the golden ticket to a
-                                well-paying job, and student loans were
-                                merely the cost of admission. today, <a
-                                    href="https://www.federalreserve.gov/publications/2019-economic-well-being-of-us-households-in-2018-student-loans-and-other-education-debt.htm">over
-                                    half</a>of all american students have to go into
-                                some
-                                form of debt, including loans, to fund their education.
-                                the average debt burden, as of 2020? <a
-                                    href="https://educationdata.org/student-loan-debt-statistics">$39,351</a>. but what
-                                does that cost look like on a
-                                national scale? and what would be different, if the government just funded postsecondary
-                                education directly?
-                            </p>
-                            <p>
-                                the visualizations below focus on the growth and composition of outstanding federal debt
-                                from 2014 to 2020.
-                            </p>
-                        </div>
-                    </div>
                     <h2 id="interactive-fiction"><a href="#interactive-fiction">▒ </a><em>interactive fiction</em></h2>
-                    <div>
-                        <p>
-                            the cost of college keeps going up, and so do outstanding loans. but <em>how</em> fast, and
-                            what kinds?</p>
-                        <p>this first chart animates the amount (in $B) of outstanding federal student loan debt
-                            (principal and interest) from q2 2014–q4 2020 for consolidated, stafford unsubsidized,
-                            stafford subsidized, parent plus, grad plus, and perkins loans. see <a
-                                href="https://observablehq.com/d/e9e3929cf7c50b45">the explainer</a>for the
-                            base, annotated source code, and <a
-                                href="https://studentaid.gov/"">studentaid.gov</a>for the <a href="
-                                https://studentaid.gov/data-center/student/portfolio">source data</a>and a <a
-                                href="https://studentaid.gov/understand-aid/types/loans">breakdown of loan types</a>.
-                            the code can be viewed and modified through the embedded observable link below.
-                        </p>
-                        <p>(note: the amount of outstanding perkins debt was the only category that decreased between
-                            2014–2020, after the federal government stopped offering new perkins loans in 2018.)</p>
-                    </div>
+                    <div><p>
+                        who might have to take on loans, and why? the government offers aid based on parental income, and if
+                        you can't rely on that, or if it's just not enough—well, you'll just have to make do. somehow.
+                    </p>
+                    <p>
+                        this ink story puts you in the shoes of a newly-minted high school graduate trying to afford college.
+                    </p></div>
                     <div id="interactive-fiction-body">
                         <iframe width="100%" height="492" frameborder="0" src="story/story.html"></iframe>
                     </div>
@@ -160,9 +124,7 @@
         }
     }
 </script>
-<script>document.getElementById("introduction").addEventListener('click', function () {
-        slideToggle(document.getElementById("introduction-body"), 350);
-    });
+<script>
     document.getElementById("interactive-fiction").addEventListener('click', function () {
         slideToggle(document.getElementById("interactive-fiction-body"), 350);
     });</script>
