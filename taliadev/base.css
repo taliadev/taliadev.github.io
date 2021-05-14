@@ -16,15 +16,6 @@
 	border-collapse: collapse;
 }
 
-/*.col {
-	border: 6px double #850E08;
-  border-radius: 0.25em;
-	padding: 1em;
-  -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}*/
-
 .user-list {
 	display: flex;
 	flex-flow: row wrap;
@@ -114,11 +105,6 @@ h2 {
 	}
 }
 
-/* THEGOODS */
-
-
-/* SDOOGEHT */
-
 .sourceCode {
  color:#008000;
 }
@@ -127,19 +113,6 @@ code > span.fl {
  color: #008000; 
 }
 
- /* Style the navbar */
-/*#navbar:before {
-	content: '';
-	display: block;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	background: rgba(127, 127, 127, 0.5);
-	background-image: radial-gradient(black 33%, transparent 33%);
-	background-size: 2px 2px;
-}*/
 #navbar {
 	overflow: hidden;
     background-image: radial-gradient(#000 15%, transparent 80%);
@@ -183,11 +156,11 @@ code > span.fl {
 }
 
 /* VISUALIZATIONS */
-#bar-chart-race, #introduction, #donut-2020, #donut-2014 {
+#bar-chart-race, #introduction, #donut-2020, #donut-2014, #interactive-fiction {
 	cursor:pointer;
 }
 
-#bar-chart-race-body, #introduction-body, #donut-2014-body, #donut-2020-body {
+#bar-chart-race-body, #introduction-body, #donut-2014-body, #donut-2020-body, #interactive-fiction-body {
 	padding: 1.5em;
 	margin: 1.5em;
 	background-color: #eee;
