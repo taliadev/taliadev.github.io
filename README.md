@@ -1,4 +1,3 @@
----
-permalink: /index.html
----
 # taliadev.github.io
+
+> A portfolio for my various projects.
