@@ -1,3 +1,3 @@
 # taliadev.github.io
 
-> A portfolio for my various projects.
+> Central domain for my various static sites.
